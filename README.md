@@ -29,6 +29,7 @@ On EC2 instance:
     `sudo usermod -a -G docker ec2-user` so ec2-user has privileges for running docker
   
   Create Dockerfile:
+  
   `FROM datamechanics/spark:3.1-latest`
   `ENV PYSPARK_MAJOR_PYTHON_VERSION=3`
   `WORKDIR /home/ec2-user`
