@@ -5,8 +5,8 @@ On EC2 instance:
   use `pip3 install flintrock` to install flintrock to create spark clusters
   `flintrock configure` to create configuration file
   us editor to modify ~/.config/flintrock/config.yaml
-    edit ...
-    edit ...
+    edit key-name: to keys used to ec2 instance, case sensitive, and no extension
+    edit identity-file: to full path of key
     edit number of slaves to 3  
   flintrock launch <cluster name>
   
@@ -29,7 +29,6 @@ On EC2 instance:
     `sudo usermod -a -G docker ec2-user` so ec2-user has privileges for running docker
   
   Create Dockerfile:
-  
   `FROM datamechanics/spark:3.1-latest`
   `ENV PYSPARK_MAJOR_PYTHON_VERSION=3`
   `WORKDIR /home/ec2-user`
