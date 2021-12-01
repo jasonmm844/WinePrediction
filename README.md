@@ -13,7 +13,7 @@ On EC2 instance:
   `wget  https://dlcdn.apache.org/spark/spark-3.2.0/spark-3.2.0-bin-hadoop3.2.tgz` to download spark tarball
   `tar xzvf spark-3.2.0=bin-hadoop3.2.tgz`
   change to spark directory
-  `export SPARK_HOME=`pwd``
+  `export SPARK_HOME=\`pwd\``
   `export PYTHONPATH=$(ZIPS=("$SPARK_HOME"/python/lib/*.zip); IFS=:; echo "${ZIPS[*]}"):$PYTHONPATH`
   
   In order to run winetraining.py with spark use:
